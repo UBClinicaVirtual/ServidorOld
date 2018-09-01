@@ -27,7 +27,7 @@ Routes for the auth functions like login, logout, etc.
 */
 Route::get('helloAuth', 'AuthController@index');
 
-Route::post('login', 'AuthController@login');
+//Route::post('login', 'AuthController@login');
 Route::post('logout', 'AuthController@logout');
 Route::post('deleteUsr', 'AuthController@deleteUsr');
 

@@ -81,4 +81,16 @@ class AuthController extends Controller
     {
         //
     }
+
+    public function login_gmail ($gmail_token, $api_key)
+    {
+        return array("asd"=>"dsa");
+    }
+
+    public function login_gmail_api (Request $req)
+    {
+        $response = $this ->login_gmail($req['token'],$req ['api_key']);
+
+        return json_encode($response);
+    }
 }
